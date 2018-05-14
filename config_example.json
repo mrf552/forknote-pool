@@ -110,7 +110,8 @@
 
     "daemon": {
         "host": "127.0.0.1",
-        "port": 42081
+        "port": 42081,
+        "legacy": false
     },
 
     "wallet": {

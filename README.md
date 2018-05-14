@@ -292,7 +292,8 @@ Explanation for each field:
 /* Coin daemon connection details. */
 "daemon": {
     "host": "127.0.0.1",
-    "port": 29081
+    "port": 29081,
+    "legacy": false  // Use 1 for forknote v2.1.2 or older
 },
 
 /* Wallet daemon connection details. */
@@ -311,7 +312,8 @@ Explanation for each field:
 "monitoring": {
     "daemon": {
         "checkInterval": 60, //interval of sending rpcMethod request
-        "rpcMethod": "getblockcount" //RPC method name
+        "rpcMethod": "getblockcount", //RPC method name
+        "legacy": false  // Use true if you use legacy version (before Forknote v2.1.2.1). For details: https://github.com/forknote/forknote-pool/issues/48
     },
     "wallet": {
         "checkInterval": 60,
